@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Perfil - Flexun Store</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Editar Perfil</h1>
+  </header>
+
+  <section class="edit-profile-form">
+    <!-- Formulario para editar el perfil -->
+    <form action="/users/profile/edit" method="POST">
+      <label for="username">Nuevo Nombre de Usuario:</label>
+      <input type="text" id="username" name="username" value="<%= user.username %>" required>
+
+      <label for="email">Nuevo Correo Electrónico:</label>
+      <input type="email" id="email" name="email" value="<%= user.email %>" required>
+
+      <button type="submit">Guardar Cambios</button>
+    </form>
+  </section>
+</body>
+<
